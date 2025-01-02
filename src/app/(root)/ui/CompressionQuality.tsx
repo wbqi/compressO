@@ -72,27 +72,27 @@ function CompressionQuality() {
       </Checkbox>
       <Slider
         label
-        aria-label="Quality"
+        aria-label="质量控制"
         size="sm"
         marks={[
           {
             value: 0,
-            label: 'Low',
+            label: '缩小优先',
           },
           {
             value: 50,
-            label: 'Medium',
+            label: '均衡压缩',
           },
           {
             value: 99,
-            label: 'High',
+            label: '清晰优先',
           },
         ]}
         className="mb-8"
         classNames={{ mark: 'text-xs' }}
         getValue={(value) => {
           const val = Array.isArray(value) ? value?.[0] : +value
-          return val < 50 ? 'Low' : val >= 50 && val < 100 ? 'Medium' : 'High'
+          return val < 50 ? 'Low' : val >= 50 && val < 100 ? '均衡压缩' : 'High'
         }}
         renderValue={(props) => (
           <p className="text-primary text-sm font-bold">{props?.children}</p>
