@@ -3,8 +3,8 @@ export const extensions = {
 } as const
 
 export const compressionPresets = {
-  ironclad: 'ironclad',
-  thunderbolt: 'thunderbolt',
+  ironclad: '质量优先',
+  thunderbolt: '速度优先',
 } as const
 
 export type CompressionResult = {
