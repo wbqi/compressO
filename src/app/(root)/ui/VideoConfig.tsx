@@ -181,7 +181,7 @@ function VideoConfig() {
             className="px-4 py-6 hlg:py-10 rounded-xl border-2 border-zinc-200 dark:border-zinc-800"
             {...defaultEntryExitTransition}
           >
-            <p className="text-xl mb-6 font-bold">Output Settings</p>
+            <p className="text-xl mb-6 font-bold">输出设置</p>
             <div className="flex items-center my-2">
               <Checkbox
                 isSelected={shouldMuteVideo}
@@ -193,7 +193,7 @@ function VideoConfig() {
               >
                 <div className="flex justify-center items-center">
                   <span className="text-gray-600 dark:text-gray-400 block mr-2 text-sm">
-                    Mute Video
+                    视频静音
                   </span>
                 </div>
               </Checkbox>
@@ -211,15 +211,14 @@ function VideoConfig() {
               >
                 <div className="flex justify-center items-center">
                   <span className="text-gray-600 dark:text-gray-400 block mr-2 text-sm">
-                    Disable Compression
+                    禁用压缩
                   </span>
                   <Tooltip
                     delay={0}
                     content={
                       <div className="max-w-[10rem] p-2">
                         <p>
-                          You can disable the compression if you just want to
-                          change the extension of the video.
+                          如果仅需更改格式可以选择禁用压缩画质
                         </p>
                       </div>
                     }
@@ -235,7 +234,7 @@ function VideoConfig() {
             <Divider className="my-3" />
             <Select
               fullWidth
-              label="Compression preset:"
+              label="预设压缩:"
               className="block flex-shrink-0 rounded-2xl"
               size="sm"
               selectedKeys={[presetName]}
@@ -274,7 +273,7 @@ function VideoConfig() {
             <Divider className="my-3" />
             <Select
               fullWidth
-              label="Extension:"
+              label="输出格式:"
               className="block flex-shrink-0 rounded-2xl"
               size="sm"
               value={convertToExtension}
@@ -311,7 +310,7 @@ function VideoConfig() {
                   fullWidth
                   size="lg"
                 >
-                  Compress <Icon name="logo" size={25} />
+                  压缩 <Icon name="logo" size={25} />
                 </Button>
               )}
             </div>
