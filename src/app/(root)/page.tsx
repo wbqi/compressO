@@ -120,9 +120,9 @@ function Root() {
             <div className="flex flex-col justify-center items-center py-16 px-20 border-2 border-dashed border-zinc-200 dark:border-zinc-800 rounded-3xl">
               <Icon name="videoFile" className="text-primary" size={60} />
               <p className="italic text-sm mt-4 text-gray-600 dark:text-gray-400 text-center">
-                Drag & Drop
+                点击选择视频
                 <span className="block">Or</span>
-                Click to select a video.
+                或将视频拖放此处
               </p>
             </div>
           </motion.div>
